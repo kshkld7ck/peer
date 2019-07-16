@@ -127,7 +127,7 @@ span.close_white {
     font-size:12px;
 }
 article span.close_white {
-    bottom:-2px;
+
     left:-14px;
 }
 span.close_white img {
@@ -135,6 +135,10 @@ span.close_white img {
     height:30px;
     margin-right:10px;
 
+}
+main, main .container {
+    overflow:hidden;
+    height: 100vh;
 }
 
     .nav__list-mobile {
@@ -382,7 +386,8 @@ article .container {
 
     .item {
         height: 100vh;
-        flex-direction: column-reverse
+        flex-direction: column-reverse;
+        justify-content: center;
     }
 
     .carousel__item-header {
