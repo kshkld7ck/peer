@@ -399,8 +399,8 @@ article .container {
 
     main #carousel .carousel__item-logo {
         width: 100%;
-        max-width: 320px;
-        height: 120px;
+        max-width: 250px;
+        height: 80px;
     }
 
     .carousel__item-footer {
@@ -412,6 +412,10 @@ article .container {
     .owl-nav,
     .owl-dots {
         display: none;
+    }
+    .item {
+        padding-top:75px;
+        padding-bottom:75px;
     }
 
     body {

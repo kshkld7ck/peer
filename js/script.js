@@ -124,10 +124,11 @@ $('.nav__list-mobile').addClass('active_list');
 
     })
     $('span.close_white').click(function(){
-$('.nav__list-mobile, article#menu').removeClass('active_list');
+$('.nav__list-mobile, article#menu, .tabs__opened').removeClass('active_list');
 $('.main__social-block').removeClass('opacity')
 $('nav').removeClass('nav__red');
 $('.nav__item-mobile').removeClass('small_item');
+
 
     })
    
