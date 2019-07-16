@@ -136,7 +136,7 @@ span.close_white img {
     margin-right:10px;
 
 }
-main, main .container {
+.item {
     overflow:hidden;
     height: 100vh;
 }
@@ -506,6 +506,7 @@ article .container {
         display:none;
     }
     .tabs__opened.active_list {
+        overflow-y:auto;
 display:flex;
     }
     .tabs__opened  span.close_white{
@@ -542,7 +543,8 @@ filter:invert(1)
     }
     .open {
         padding:20px 0px;
-        overflow-y:auto;
+        overflow-y:scroll;
+        max-height:50vh;
         overflow-x:hidden;
     }
     .opened__h {
