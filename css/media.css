@@ -387,7 +387,7 @@ article .container {
     .item {
         height: 100vh;
         flex-direction: column-reverse;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .carousel__item-header {
