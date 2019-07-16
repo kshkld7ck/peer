@@ -1,8 +1,8 @@
 @media (min-width:768px) and (max-width:991px) {
     .container {
         width: 100%;
-        min-width: 991px;
-        max-width: 991px;
+        min-width: 768px;
+        max-width: 768px;
         position: relative;
         margin: 0 auto;
         z-index: 12;
@@ -13,6 +13,9 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: 50% 50%;
+    }
+    .carousel__item-header {
+        
     }
 }
 
@@ -258,6 +261,9 @@ article .container {
     margin: 0 auto;
     min-width: 80%;
 }
+.member-block:hover .member__description-hidden, .member-block:hover .member__name-hidden {
+    display:inline-block;
+}
 #menu.active_list {
     display:flex;
 }
@@ -412,7 +418,7 @@ article .container {
     .item {
         height: 100vh;
         flex-direction: column-reverse;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     .carousel__item-header {
