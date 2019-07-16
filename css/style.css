@@ -937,7 +937,7 @@ article .container {
     margin: auto;
 }
 
-.menu__point:nth-child(2):before {
+.menu__point:nth-child(4):before {
     margin-left: 212px
 }
 
@@ -1049,7 +1049,7 @@ span.close:hover {
     padding-top: 40px;
 }
 
-.tabs__red {
+.tabs__red, .tabs__default.tabs__red {
     background-color: #ed2841;
 }
 

@@ -14,11 +14,118 @@
         background-size: contain;
         background-position: 50% 50%;
     }
-    .carousel__item-header {
-        
+    .item {
+     height:600px
+    }
+    .main__social-block {
+        right:20px;
+    }
+    ul.nav__list li {
+        padding:20px;
+    }
+    .nav__list-right {
+        margin-right:40px;
+    }
+    .owl-dots, .owl-nav {
+display:none;
+    }
+    .item {
+        padding-left: 20px;
+        padding-right:20px;
+    }
+    footer {
+        overflow:hidden;
+    }
+    footer .container:before, #description .container:before {
+        display: none;
+    }
+    footer .container {
+        justify-content: center;
+    }
+    #description .container {
+        padding: 107px 125px 113px 125px;
+
+    }
+    .tabs__block, .tabs__nav {
+        width:120px;
+        padding-bottom:180px
+    }
+    .tabs__nav h4 {
+        font-size:18px;
+    }
+    .tabs__block h4 {
+        font-size:45px;
+        right:-265%
+    }
+    .tabs__nav .nominants h4 {
+        margin-left:0 !important
+    }
+    .tabs__opened .opened__wrapper .tabs__opened_block {
+        max-width:500px;
+    }
+    .categories__block img {
+        width:100px;
+    }
+    .categories__block {
+        width:40%;
+        margin-bottom:10px;
+        padding:4px;
+    }
+    .tabs__nav {
+        transform:none;
+        margin-left:40px
+    }
+    .tabs__nav-skew {
+        transform:rotate(-90deg)
+    }
+    .nominants__categories {
+        flex-wrap:wrap;
+    }
+    .category__opened p {
+        font-size:14px;
+    }
+    .choose__wrapper {
+        margin-top:20px;
+    }
+    .choose__block {
+        font-size:14px;
+    width:100px;
+    }
+    .open h3 {
+        display:none;
+    }
+    .choose_outer {
+        display:none;
+    }
+    .jury__members-mobile {
+        display:flex;
+        flex-direction: row;
+        justify-content:space-between;
+    } 
+    .member-block {
+        width:30%;
+    }
+    .member__photo {
+        width:100px;
+    }
+    .member__category {
+        width:50%;
+    }
+    .jury__members {
+        display:none;
+    }
+    .tabs__nav h4 {
+        margin-left:0 !important;
     }
 }
-
+@media (min-width:991px) {
+    .jury__members-mobile {
+        display:none;
+    }
+    .choose_outer {
+        display:none;
+    }
+}
 @media (min-width:991px) and (max-width:1200px) {
     .container {
         width: 100%;
