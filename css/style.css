@@ -1419,6 +1419,9 @@ span.close_white:hover {
 .counter__mobile {
     display:none;
 }
+main {
+    display:block;
+}
 
 button {
     cursor:pointer;
