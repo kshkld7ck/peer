@@ -1143,9 +1143,15 @@ span.close:hover {
 }
 .choose__wrapper {
     margin-top:43px;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    flex-direction: row;
-    justify-content:space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack:distribute;
+        justify-content:space-around;
 }
 .choose__block {
     color:#fff;
@@ -1156,10 +1162,16 @@ span.close:hover {
 height: 66px;
 border-radius: 10px;
 border: 1px solid #ffffff;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-justify-content: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
 text-align: center;
-align-items:center;
+-webkit-box-align:center;
+    -ms-flex-align:center;
+        align-items:center;
 cursor:pointer;
 }
 .choose__block.active__choose {
@@ -1189,14 +1201,22 @@ cursor:pointer;
     margin-top:4px;
 }
 .jury__members {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
     margin-top:18px;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 
 }
 .member-block {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
      
 }
 .member__photo {
@@ -1252,8 +1272,13 @@ display: none;
     border-right: 20px solid rgba(255, 255, 255, 1);
     left: -20px;
 }
-.member__photo:hover ~ .member__card {
-    display:block;
+@media (min-width:768px) {
+    .member__photo:hover ~ .member__card {
+        display:block;
+    }
+    .member-block:hover .member__description-hidden, .member-block:hover .member__name-hidden {
+        display:none;
+    }
 }
 .member-block.block-opacity {
     opacity:.5
@@ -1275,9 +1300,7 @@ display: none;
     font-weight:300;
     margin-bottom:15px;
 }
-.member-block:hover .member__description-hidden, .member-block:hover .member__name-hidden {
-    display:none;
-}
+
 .tabs__opened {
 display:none;
 }

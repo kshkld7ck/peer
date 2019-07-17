@@ -368,9 +368,9 @@ article .container {
     margin: 0 auto;
     min-width: 80%;
 }
-.member-block:hover .member__description-hidden, .member-block:hover .member__name-hidden {
+/* .member-block:hover .member__description-hidden, .member-block:hover .member__name-hidden {
     display:inline-block;
-}
+} */
 #menu.active_list {
     display:flex;
 }
