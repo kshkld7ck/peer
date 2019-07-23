@@ -14,6 +14,9 @@
         background-size: contain;
         background-position: 50% 50%;
     }
+    .menu__point:nth-child(8):before {
+        right:225px;
+    } 
     .item {
      height:600px
     }
@@ -136,6 +139,9 @@ display:none;
         z-index: 12;
     }
 
+    .menu__point:nth-child(8):before {
+        right:185px;
+    }
     .tabs__block {
         width: 175px;
     }
@@ -235,6 +241,9 @@ display:none;
         margin: 0 auto;
         z-index: 12;
         padding: 0 15px;
+    }
+    .menu__point a {
+         color:#fff;
     }
 
     .nav__desktop {

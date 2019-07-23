@@ -921,6 +921,9 @@ main .container:first-child {
     border-right: 20px solid transparent;
     border-bottom: 20px solid rgba(255, 255, 255, 1)
 }
+.menu__point:nth-child(8):before {
+    right:100px;
+}
 
 article .container {
     z-index: 46
@@ -1411,13 +1414,22 @@ span.close_white:hover {
 
 
 }
+
+.hidden {
+    display:none !important;
+}
 .nav__item-mobile.small_item {
     height:20px;
     border-radius:4px;
 }
-
+.menu__point a {
+    color:#575757;
+}
 .counter__mobile {
     display:none;
+}
+.menu__point a:hover {
+    text-decoration:none;
 }
 main {
     display:block;

@@ -143,7 +143,7 @@ $('.nav__item-mobile').removeClass('small_item');
             $('.nav__item-mobile').addClass('small_item');
             $('[data-item="' + data + '"]').toggle();
             console.log(data)
-            $('article li[data-target="about"]').removeClass('small_item').hover();
+            $('article li[data-target="'+data+'"]').removeClass('small_item').hover();
             $('nav').addClass('nav__red');
         }
     })
