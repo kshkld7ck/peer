@@ -932,6 +932,9 @@ article .container {
 .menu__point {
     display: none;
 }
+.menu__buy {
+    display:none;
+}
 
 .menu__point hr {
     margin: 10px 15px !important;
