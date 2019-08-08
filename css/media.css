@@ -54,23 +54,38 @@ display:none;
         padding-bottom:180px
     }
     .tabs__nav h4 {
-        font-size:18px;
+        font-size:16px;
+    }
+    .nomination__block {
+        min-width:120px;
+        max-width:120px;
+        font-size:12px;
     }
     .tabs__block h4 {
         font-size:45px;
-        right:-265%
+        right:65%
+    }
+    .modal__cards img {
+        width:40%;
+    }
+    .nomination__name, .to__category {
+        font-size:14px;
     }
     .tabs__nav .nominants h4 {
         margin-left:0 !important
     }
     .tabs__opened .opened__wrapper .tabs__opened_block {
-        max-width:500px;
+        max-width:600px;
+        padding-right:10px;
     }
     .categories__block img {
-        width:100px;
+        width:70px;
+    }
+    .categories__block span {
+        font-size:10px
     }
     .categories__block {
-        width:40%;
+        width:110px;
         margin-bottom:10px;
         padding:4px;
     }
@@ -92,7 +107,10 @@ display:none;
     }
     .choose__block {
         font-size:14px;
-    width:100px;
+    width:100%;
+    }
+    .tabs__blue .nomination__row {
+        flex-wrap:wrap;
     }
     .open h3 {
         display:none;
@@ -147,7 +165,7 @@ display:none;
     }
 
     .tabs__block h4 {
-        right: -180%;
+        right: 50px;
         font-size: 50px;
     }
 
@@ -206,7 +224,7 @@ display:none;
     }
 
     .categories__block img {
-        width: 100px;
+        width: 90px;
     }
 
     .categories__block span {
@@ -218,8 +236,8 @@ display:none;
     }
 
     .choose__block {
-        font-size: 15px;
-        width: 45%;
+        font-size: 12px;
+        width: 100%;
     }
 }
 
@@ -844,4 +862,36 @@ filter:invert(1)
 .red_logo {
     display:none;
 }
+}
+@media (min-width:991px) and (max-width:1200px) {
+    .opened__h {
+        font-size:12px;
+    }
+    .tabs__nav h4 {
+        font-size:25px;
+    }
+    .tabs__nav {
+        width:175px;
+    
+    padding-bottom:130px;}
+    .nomination__block {
+        max-width:120px;
+        min-width:120px;
+        font-size:12px;
+    }
+    .tabs__blue .nomination__block {
+        max-width:110px;
+        min-width:110px
+    }
+    .modal__cards img {
+        width:40%;
+    }
+    .nomination__name, .to__category {
+        font-size:14px;
+    }
+}
+@media (min-width:768px) and (max-width:991px) {
+    .opened__h {
+        font-size:12px;
+    }
 }

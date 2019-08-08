@@ -10,8 +10,11 @@
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha256-rByPlHULObEjJ6XQxW/flG2r+22R5dKiAoef+aXWfik=" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=" crossorigin="anonymous"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
 </head>
@@ -231,7 +234,7 @@
             <div class="opened__wrapper">
                 <div class="tabs__opened_block ">
                     <li class="tabs__list-mobile" data-target="opened__nominants">Номинанты</li>
-                    <div class="open opened__nominants">
+                    <div class="open opened__nominants" data-count="0">
                         <p class="opened__h">
                             НОМИНАНТЫ PIREXPO AWARDS 2019 <br>
                             Все самое новое и инновационное для вашего ресторана, кофейни, гостиницы! <br>
@@ -258,25 +261,43 @@
                                         Выберите  <br> <b>категорию</b>
                                     </p>
                         </div>
-                        <div class="category__opened equip">
-                            <p>
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                                architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-                                sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                                voluptatem sequi nesciunt. Neque porro quisquam est,
+                        <div class="nomination__opened equip">
+                            <hr> <br>
+                            <p class="opened__h">
+                                Выберите номинацию:
                             </p>
-                            <hr>
+                            <div class="nomination__row" data-target="equip">
+                                <div class="nomination__block">
+                                    Лучшее технологическое / инженерное решение
+                                </div>
+                                <div class="nomination__block">
+                                    Лучшее смарт решение
+                                </div>
+                                <div class="nomination__block">
+                                        Лучшая отечественная разработка
+
+                                </div>
+                                <div class="nomination__block">
+                                    Лучший дизайн
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category__opened equip">
+                     
+                            <hr><br>
                             <p class="opened__h">
                                 Выберите категорию:
                             </p>
                             <div class="choose__wrapper">
-                                <div class="choose__block" data-target="first_choose">РАСХОДНЫЕ МАТЕРИАЛЫ</div>
-                                <div class="choose__block" data-target="second_choose">РАСХОДНЫЕ МАТЕРИАЛЫ</div>
-                                <div class="choose__block" data-target="third_choose">РАСХОДНЫЕ МАТЕРИАЛЫ</div>
-                                <div class="choose__block" data-target="fourth_choose">РАСХОДНЫЕ МАТЕРИАЛЫ</div>
+                                <div class="choose__block" data-target="first_choose">Расходные материалы</div>
+                                <div class="choose__block" data-target="second_choose">Инженерно-технические решения для ресторана</div>
+                                <div class="choose__block" data-target="third_choose">Оборудование для профессиональной кухни</div>
+                                <div class="choose__block" data-target="fourth_choose">Интерьер и оснащение зала</div>
+                                <div class="choose__block" data-target="fifth_choose">IT-Технологии</div>
+
+
                             </div>
-                            <div class="choose_outer">
+                            <!-- <div class="choose_outer">
                                 <div class="block" data-target="first_choose">
                                     ТЕКСТИЛЬ <br>
                                     ТЕКСТИЛЬ <br>
@@ -290,22 +311,138 @@
 
                                 <div class="block" data-target="fourth_choose"></div>
 
-                            </div>
+                            </div> -->
                         </div>
+                        
+                        <div class="nomination__opened restraunt">
+                                <hr> <br>
+                                <p class="opened__h">
+                                    Выберите номинацию:
+                                </p>
+                                <div class="nomination__row" data-target="restraunt">
+                                    <div class="nomination__block">
+Эко продукт / здоровое питание                                    </div>
+                                    <div class="nomination__block">
+                                        Лучшее инновационное решение
+                                    </div>
+                                    <div class="nomination__block">
+                                            Лучшая отечественная разработка
+    
+                                    </div>
+                                   
+                                </div>
+                            </div>
                         <div class="category__opened restraunt">
 
+                                <hr><br>
+                                <p class="opened__h">
+                                    Выберите категорию:
+                                </p>
+                                <div class="choose__wrapper">
+                                    <div class="choose__block" data-target="first_choose">Хлебобулочная и кондитерская продукция</div>
+                                    <div class="choose__block" data-target="second_choose">Бакалея</div>
+                                    <div class="choose__block" data-target="third_choose">Овощи и фрукты</div>
+                                    <div class="choose__block" data-target="fourth_choose">Мясо и птица</div>
+                                    <div class="choose__block" data-target="fifth_choose">Рыба и морепродукты</div>
+                                    <div class="choose__block" data-target="six_choose">Молочные и масло-жировые продукты</div>
+
+    
+    
+                                </div>
                         </div>
+                        <div class="nomination__opened hotel">
+                                <hr> <br>
+                                <p class="opened__h">
+                                    Выберите номинацию:
+                                </p>
+                                <div class="nomination__row" data-target="hotel">
+                                    <div class="nomination__block">
+                                        Лучшее технологическое / инженерное решение
+                                    </div>
+                                    <div class="nomination__block">
+                                        Лучшее смарт решение
+                                    </div>
+                                    <div class="nomination__block">
+                                            Лучшая отечественная разработка
+    
+                                    </div>
+                                    <div class="nomination__block">
+                                            Лучший экологический продукт
+                                        </div>
+                                    <div class="nomination__block">
+                                        Лучший дизайн
+                                    </div>
+                                </div>
+                            </div>
                         <div class="category__opened hotel">
-
+                                <hr><br>
+                                <p class="opened__h">
+                                    Выберите категорию:
+                                </p>
+                                <div class="choose__wrapper">
+                                    <div class="choose__block" data-target="first_choose">Расходные материалы</div>
+                                    <div class="choose__block" data-target="second_choose">Оснащение и оборудование гостиниц</div>
+                                    <div class="choose__block" data-target="third_choose">Интерьер</div>
+                                    <div class="choose__block" data-target="fourth_choose">Экстерьер</div>
+                                    <div class="choose__block" data-target="fifth_choose">АСУ/IT-Технологии</div>
+    
+    
+                                </div>
                         </div>
+                        <div class="nomination__opened coffee">
+                                <hr> <br>
+                                <p class="opened__h">
+                                    Выберите номинацию:
+                                </p>
+                                <div class="nomination__row" data-target="coffee">
+                                    <div class="nomination__block">
+                                        Лучшее технологическое / инженерное решение
+                                    </div>
+                                    <div class="nomination__block">
+                                        Лучшее смарт решение
+                                    </div>
+                                    <div class="nomination__block">
+                                            Лучшая отечественная разработка
+    
+                                    </div>
+                                    <div class="nomination__block">
+                                        Лучший дизайн
+                                    </div>
+                                </div>
+                            </div>
                         <div class="category__opened coffee">
-
+                                <hr><br>
+                                <p class="opened__h">
+                                    Выберите категорию:
+                                </p>
+                                <div class="choose__wrapper">
+                                        <div class="choose__block" data-target="first_choose">Профессиональное оборудование для приготовления кофе и чая</div>
+                                        <div class="choose__block" data-target="second_choose">Аксессуары для приготовления кофе или обслуживания кофейного оборудования</div>
+                                        <div class="choose__block" data-target="third_choose">Некофейные напитки или ингридиенты для приготовления кофе / некофейных напитков</div>
+                                        <div class="choose__block" data-target="fourth_choose">Оснащение кофейни</div>
+                                        <div class="choose__block" data-target="fifth_choose">Упаковка</div>
+    
+    
+                                </div>
                         </div>
+
+
+                        <div class="modal"><div class="modal-header">
+                            <div class="modal-logo"></div><span class="nomination__name">оснащение</span><span class="to__category">Список категорий</span>
+                            <span class="close_modal"><img src="images/close.png" alt=""></span>
+                        </div>
+                    <div class="modal__cards">
+                        <img src="images/last_card.jpg" alt="">
+                        <img src="images/last_card.jpg" alt="">
+                        <img src="images/last_card.jpg" alt="">
+                        <img src="images/last_card.jpg" alt="">
+
+                    </div></div>
                         <h3>НОМИНАНТЫ</h3>
                     </div>
                     <li class="tabs__list-mobile" data-target="opened__jury">Жюри</li>
 
-                    <div class="open opened__jury">
+                    <div class="open opened__jury" data-count="1">
                         <p class="opened__h">
                             Жюри премии состоит из признанных экспертов ресторанного, отельного и кофейного рынка
                             России, представляющих предприятия различных направлений и категорий
@@ -466,17 +603,17 @@
                     </div>
                     <li class="tabs__list-mobile" data-target="opened__choose">Проголосовать</li>
 
-                    <div class="open opened__choose">
+                    <div class="open opened__choose" data-count="2">
 
                     </div>
                     <li class="tabs__list-mobile" data-target="opened__videophoto">Видео и фото</li>
 
-                    <div class="open opened__videophoto">
+                    <div class="open opened__videophoto" data-count="3">
 
                     </div>
                     <li class="tabs__list-mobile" data-target="opened__partners">Партнеры</li>
 
-                    <div class="open open__partners">
+                    <div class="open opened__partners" data-count="4">
 
                     </div>
 
@@ -489,13 +626,13 @@
                         <h4 data-target="opened__jury" data-nav="jury">
                             ЖЮРИ
                         </h4>
-                        <h4 data-target="open__choose" data-nav="choose">
+                        <h4 data-target="opened__choose" data-nav="choose">
                             ПРОГОЛОСОВАТЬ
                         </h4>
-                        <h4 data-target="open__videophoto" data-nav="videophoto">
+                        <h4 data-target="opened__videophoto" data-nav="videophoto">
                             ВИДЕО И ФОТО
                         </h4>
-                        <h4 data-target="open__partners" data-nav="partners">
+                        <h4 data-target="opened__partners" data-nav="partners">
                             ПАРТНЕРЫ
                         </h4>
                     </div>
