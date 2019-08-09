@@ -1500,6 +1500,9 @@ button {
 .open {
     position: relative;
 }
+.tabs__block {
+    cursor:pointer;
+}
 .modal {
     position: absolute;
     width:calc(100% + 32px);
@@ -1508,6 +1511,26 @@ button {
     top:0;
     border-radius:10px;
     padding:22px 18px;
+}
+.modal__cards img.full_img {
+    width:100%;
+    height:100%;
+    display:block;
+    transition:.2s;
+}
+.modal__cards img {
+    transition:.2s;
+}
+.modal__cards img.hidden1 {
+    opacity:0;
+    
+}
+
+footer .footer__info {
+    display:none !important;
+}
+.nav__item-user {
+    display:none;
 }
 .tabs__default .modal-logo, .tabs__red .modal-logo {
     width: 157px;
@@ -1583,3 +1606,60 @@ background-size:contain;
     opacity:.8;
     cursor:pointer;
 }
+.modal-preview img {
+    box-shadow: 0 0 14px 1px rgba(0,0,0,0.3);
+    width:unset;
+}
+.modal-preview {
+    position: absolute;
+    left:0;
+    display:none;
+    cursor:pointer;
+    
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.modal__cards {
+    position: relative;
+}
+.modal__card-block {
+    position: relative;
+    cursor:pointer
+}
+.modal__card-block:after {
+    content: "";
+    width: 20px;
+    background: url(../images/expand-square.svg) no-repeat;
+    background-size: contain;
+    height: 20px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    filter: invert(.5);
+    opacity:0;
+    transition:.3s;
+}
+.modal__card-block:hover::after {
+    opacity:1;
+    transition:.3s;
+}
+.modal-preview:before {
+    left:70px;
+    top:30px;
+    content:'';
+    background:url('../images/close.png') no-repeat;
+    background-size:contain;
+    width:30px;
+    height:30px;
+    position: absolute;
+    filter: invert(.5);
+
+}
+/* .modal__card-block img:hover {
+    box-shadow:0 0 6px rgba(0,0,0,.15);
+}
+.modal-preview img:hover {
+    box-shadow: 0 0 14px 1px rgba(0,0,0,0.3);
+} */

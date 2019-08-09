@@ -883,15 +883,36 @@ filter:invert(1)
         max-width:110px;
         min-width:110px
     }
-    .modal__cards img {
+    .modal__card-block {
         width:40%;
+    }
+    .modal__card-block img {
+        width:90%;
+    }
+    .modal-preview img {
+        width:90%
     }
     .nomination__name, .to__category {
         font-size:14px;
+    }
+    .modal-preview:before {
+        left:40px;
     }
 }
 @media (min-width:768px) and (max-width:991px) {
     .opened__h {
         font-size:12px;
+    }
+    .modal__card-block {
+        width:40%;
+    }
+    .modal__card-block img {
+        width:90%;
+    }
+    .modal-preview img {
+        width:90%
+    }
+    .modal-preview:before {
+        left:40px;
     }
 }
