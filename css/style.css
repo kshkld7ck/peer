@@ -176,8 +176,8 @@ ul.nav__list li:nth-child(3) {
 }
 
 ul.nav__list li:nth-child(4) {
-    max-width: 113px;
-    min-width: 113px;
+    max-width: 310px;
+    min-width: 310px;
 
 }
 
@@ -217,6 +217,9 @@ main {
     background-size: cover;
     background-position: 50% 15%
 }
+.ref__red {
+    color:#cd1e17
+}
 
 .item {
     height: 950px;
@@ -233,7 +236,25 @@ main {
             justify-content: space-between;
     padding-bottom: 100px;
 }
-
+.container .carousel__item-counter {
+    display:none;
+}
+.attention {
+    margin-top:30px;
+    display:block;
+    padding-left:40px;
+    position: relative;
+}
+.attention:before {
+    content:'';
+    width:30px;
+    height:30px;
+    background:url('../images/exclamation-mark.svg') no-repeat;
+    background-size:contain;
+    position:absolute;
+    left:0;
+    top:-5px
+}
 :active,
 :focus {
     outline: none;
@@ -375,6 +396,12 @@ main #carousel .carousel__item-logo {
 .main__social-block a.social__fb {
     background: url('../images/fb.svg') no-repeat;
 }
+.main__social-block a.social__youtube {
+    background: url('../images/youtube.svg') no-repeat;
+    background-size:contain;
+    
+}
+
 
 .main__social-block a {
     margin-bottom: 11px;
@@ -405,7 +432,9 @@ main #carousel .carousel__item-logo {
     font-weight: bold;
     color: #ececec;
 }
-
+#description {
+    display:none;
+}
 .carousel__item-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -435,7 +464,7 @@ main {
 }
 
 .item__counter-block {
-    width: 82px;
+    width: 92px;
     text-align: center;
     color: #fff;
 }
@@ -907,9 +936,43 @@ main .container:first-child {
     border-bottom: 20px solid rgba(255, 255, 255, 1)
 }
 .menu__point:nth-child(8):before {
-    right:100px;
+    right:70px;
 }
+.menu__point:nth-child(8) {
+    left: 400px;
+}
+.menu__point:nth-child(9) {
+    left: 400px;
+}
+.menu__point:nth-child(9):before {
+    left:270px;
+}
+@media (min-width:991px) and (max-width:1200px) {
+    .menu__point:nth-child(9):before {
+        left: 150px;
+    }
+    .menu__point:nth-child(8):before {
+        left: 328px;
 
+        right:unset !important
+    }
+    .menu__point:nth-child(4):before {
+        margin-left:170px !important
+    }
+}
+@media (min-width:768px) and (max-width:991px) {
+    .menu__point:nth-child(9):before {
+        left: 115px;
+    }
+    .menu__point:nth-child(8):before {
+        
+
+        right:40px !important
+    }
+    .menu__point:nth-child(4):before {
+        margin-left:130px !important;
+    }
+}
 article .container {
     z-index: 46
 }

@@ -17,6 +17,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=" crossorigin="anonymous"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/countdown.js"></script>
 </head>
 
 <body>
@@ -31,8 +32,12 @@
                 </li>
                 <li class="nav__item nav__item-padding" data-target="about">О проекте</li>
                 <li class="nav__item nav__item-padding" data-target="rules">Правила и условия</li>
-                <li class="nav__item hidden" data-target="faq">FAQ</li>
+                <li class="nav__item" data-target="ceremony">Церемония награждения</li>
+
                 <li class="nav__item" data-target="contacts">Контакты</li>
+                <li class="nav__item hidden" data-target="faq">FAQ</li>
+
+
             </ul>
             <ul class="nav__list nav__list-right">
                 <li class="nav__item nav__item-user"><img src="images/User.png" alt="" class="">Кабинет</li>
@@ -48,6 +53,8 @@
                     <li class="nav__item-mobile first__list" data-target="about">О проекте</li>
                     <li class="nav__item-mobile first__list" data-target="rules">Правила и условия</li>
                     <li class="nav__item-mobile first__list hidden" data-target="faq">FAQ</li>
+                    <li class="nav__item-mobile first__list" data-target="contacts">Церемония награждения</li>
+
                     <li class="nav__item-mobile first__list" data-target="contacts">Контакты</li>
                 </div>
                 <div class="nav__mobile-footer">
@@ -71,7 +78,8 @@
             <div class="menu__point" data-item="about">
                 
                 <span class="close"><img src="images/close.png" alt=""></span>
-                <p>Премия PIR EXPO Awards 2019. Best New Product – это новое событие в рамках выставки ПИР Экспо 2019. 
+                <p>Первая премия новинок и инноваций
+                    для предприятий индустрии HoReCA 
 <br>                    Премия проводится в трёх направлениях: Ресторан, Отель, Кофе. Наши экспоненты смогут продемонстрировать свои лучшие новые продукты, а голосование Экспертного Совета и Посетителей определит победителей премии, которых мы огласим 08.10.2019 на торжественной церемонии награждения. <br>
 Ключевые даты проведения премии: <br>
 <span>17.07.2019</span> - <span>5.09.2019</span> – сбор заявок, формирование списка претендентов <br>
@@ -119,6 +127,17 @@
                 E-mail: <br> <a href="mailto:info@pirexpo.com">info@pirexpo.com</a> <br> <br>
                 <iframe src="https://yandex.ru/map-widget/v1/-/CCdvITIO" width="100%" height="200" frameborder="0" allowfullscreen="true"></iframe>
             </div>
+            <div class="menu__point" data-item="ceremony">
+                <span class="close"><img src="images/close.png" alt=""></span>
+
+            Организатор премии <br>ООО «ПИР Экспо»
+            <br> <br>
+            Адрес офиса: <br>Москва, 3-я ул. Ямского поля, владение 2 к. 26, 2й этаж, офис 117 <br><br>
+            Почтовый адрес: <br> 125124, Москва, а/я 48 <br> <br>
+            Телефон | факс: <br> <a href="tel:84956379440">+7 (495) 637-94-40</a> <br> <br>
+            E-mail: <br> <a href="mailto:info@pirexpo.com">info@pirexpo.com</a> <br> <br>
+            <iframe src="https://yandex.ru/map-widget/v1/-/CCdvITIO" width="100%" height="200" frameborder="0" allowfullscreen="true"></iframe>
+        </div>
 
             <span class="close_white"><img src="images/close_white.png" alt="">ЗАКРЫТЬ</span>
 
@@ -128,11 +147,12 @@
 
         <div class="container social__container-mobile">
             <div class="main__social-block">
-                <a href="" class="social__fb"></a>
-                <a href="" class="social__vk"></a>
+                <!-- <a href="" class="social__fb"></a> -->
+                <!-- <a href="" class="social__vk"></a> -->
                 <a href="" class="social__tg"></a>
-                <a href="" class="social__insta"></a>
-                <a href="" class="social__viber"></a>
+                <a href="https://www.instagram.com/pirexpo/?hl=ru" class="social__insta"></a>
+                <!-- <a href="" class="social__viber"></a> -->
+                <a href="https://www.youtube.com/user/PirGroupCompany" class="social__youtube"></a>
 
             </div>
         </div>
@@ -142,20 +162,20 @@
                 <div class="item">
                     <div class="carousel__item-header"> <img src="images/Logo_CMYK.svg" class="carousel__item-logo"
                             alt="">
-                        <div class="carousel__item-counter">
+                        <div class="carousel__item-counter carousel__item-counter-desktop">
                             <p>до церемонии <br>
                                 награждения осталось:</p>
                             <div class="item__counter-row">
                                 <div class="item__counter-block">
-                                    <h6 class="item__days-h6">21</h6>
+                                    <h6 class="item__days-h6"></h6>
                                     <span class="item__days-span">день</span>
                                 </div>
                                 <div class="item__counter-block">
-                                    <h6 class="item__hours-h6">16</h6>
+                                    <h6 class="item__hours-h6"></h6>
                                     <span class="item__hours-span">часов</span>
                                 </div>
                                 <div class="item__counter-block">
-                                    <h6 class="item__minutes-h6">34</h6>
+                                    <h6 class="item__minutes-h6"></h6>
                                     <span class="item__minutes-span">минуты</span>
                                 </div>
                             </div>
@@ -438,7 +458,7 @@
                             <div class="modal__card-block">  <img src="images/last_card.jpg" alt=""></div>
                             <div class="modal__card-block">  <img src="images/last_card.jpg" alt=""></div>
                         <div class="modal-preview">
-                            
+
                         </div>
                     </div></div>
                         <h3>НОМИНАНТЫ</h3>
@@ -607,6 +627,16 @@
                     <li class="tabs__list-mobile" data-target="opened__choose">Проголосовать</li>
 
                     <div class="open opened__choose" data-count="2">
+                        <p class="opened__h"
+                        >Перейдите по ссылке для того, чтобы проголосовать! <br>
+                            Обращаем Ваше внимание, что для того,  чтобы проголосовать, Вам необходимо авторизоваться на сайте <a class="ref__red" href="https://pirexpo.com" target="_blank">pirexpo.com</a> 
+                            <br><br>Правила голосования: <br>
+                             
+                            Вы можете проголосовать за <b>ОДИН</b> продукт в категории. <br>
+                            Вы можете проголосовать в <b>КАЖДОЙ</b> категории. <br>
+                            Вы можете проголосовать в <b>КАЖДОМ</b> направлении выставки. <br>
+                            <span class="attention">Голосование проходит до <b>01.10.2019</b></span></p>
+                            <h3>ПРОГОЛОСОВАТЬ</h3>
 
                     </div>
                     <li class="tabs__list-mobile" data-target="opened__videophoto">Видео и фото</li>
