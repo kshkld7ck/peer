@@ -262,10 +262,13 @@ $(document).ready(function () {
     $('.choose__block, .nomination__block').removeClass('active__choose');
    
   })
-  $('.to__category, .close_modal, .tabs__nav h4').click(function(){
+  $('.to__category, .close_modal, .tabs__nav h4, .tabs__list-mobile').click(function(){
     $('.modal-preview').removeClass('viewed');
     $('.modal-preview').hide();
-    console.log(('clkc'))
+    console.log('d')
+  })
+  $('.tabs__list-mobile').click(function(){
+    $('.modal').hide();
   })
 //   $('.modal__cards img').on('click', function () {
 //     console.log($(this).html())

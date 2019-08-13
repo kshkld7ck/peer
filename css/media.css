@@ -7,12 +7,15 @@
         margin: 0 auto;
         z-index: 12;
     }
-    main {
+    /* main {
         background-color: #c31f16;
         background-image: url('../images/main_mobile.png');
         background-repeat: no-repeat;
         background-size: contain;
         background-position: 50% 50%;
+    } */
+    #carousel .item.first {
+        background:none
     }
     .menu__point:nth-child(8):before {
         right:225px;
@@ -729,7 +732,7 @@ filter:invert(1)
     }
     .categories__block img {
         width:100%;
-        max-width:250px;
+        max-width:100px;
     }
     .nominants__categories {
         flex-wrap:wrap;
@@ -737,7 +740,7 @@ filter:invert(1)
         justify-content: center;
     }
     .categories__block {
-     width:100%;
+     width:46%;
         margin:5px;
     }
     .categories__block span {
@@ -758,7 +761,7 @@ filter:invert(1)
     .choose__block {
         margin: 5px;
         width:100% !important;
-        font-size:15px;
+        font-size:12px;
     }
     .categories__choose.active {
         display: flex;
@@ -914,5 +917,70 @@ filter:invert(1)
     }
     .modal-preview:before {
         left:40px;
+    }
+}
+@media (max-width:768px) {
+    #carousel .item.first {
+        background:none
+    }
+    .menu__point:nth-child(8) {
+        left:0;
+    }
+    .tabs__opened .opened__wrapper .tabs__opened_block {
+        padding-right:0;
+    }
+    .nomination__block {
+        min-width:100%;
+        max-width:100%;
+        min-height:42px;
+        font-size:12px;
+        margin:5px;
+    }
+    .nomination__row {
+        flex-wrap:wrap;
+    }
+    .categories__block.active__block {
+        width:100%;
+    }
+    .choose__wrapper {
+        margin-top:20px;
+    }
+    .modal {
+        padding:5px;
+        height:unset;
+        position: relative;
+        width: 100%;
+    }
+    .modal-header {
+        flex-wrap:wrap;
+    }
+    .tabs__default .modal-logo, .tabs__red .modal-logo {
+        width:120px;
+        height:50px
+    }
+    .to__category, .nomination__name {
+        font-size:12px;
+        margin-top:4px;
+        width: 100%;
+    }
+    .to__category {
+        padding-left:0;
+    }
+    .modal__cards img {
+        width:100%;
+        margin:5px 0px;
+    }
+    .close_modal img {
+        width: 20px;
+        height: 20px;
+    }
+    .modal-preview {
+        display:none !important
+    }
+    .tabs__blue .nomination__block, .tabs__yellow .nomination__block {
+        min-width:100%;
+        max-width:100%;
+        min-height:50px;
+        max-height:50px;
     }
 }

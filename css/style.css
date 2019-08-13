@@ -211,14 +211,19 @@ ul.nav__list li:last-child {
 
 main {
     margin-top: -200px;
-    /* background:#cd1e17 */
+    background:#c51b0b;
     padding-top: 200px;
-    background: url('../images/main_bg.png') no-repeat;
+    /* background: url('../images/main_bg.png') no-repeat;
     background-size: cover;
-    background-position: 50% 15%
+    background-position: 50% 15% */
 }
 .ref__red {
     color:#cd1e17
+}
+#carousel .item.first {
+    background:url('../images/main_bg2.png') no-repeat;
+    background-size:cover;
+    background-position: 50% 50%;
 }
 
 .item {
