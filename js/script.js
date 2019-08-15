@@ -14,6 +14,20 @@ $(document).ready(function () {
       }
     }
   });
+  function isIE() {
+    ua = navigator.userAgent;
+    /* MSIE used to detect old browsers and Trident used to newer ones*/
+    var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
+    
+    return is_ie; 
+  }
+
+  if (isIE()){
+console.log('It is InternetExplorer');
+$('body').addClass('ie')
+}else{
+    console.log('It is NOT InternetExplorer');
+}
 
   $(".nav__list-left .nav__item").click(function () {
     if ($(this).attr("data-target")) {
@@ -69,7 +83,7 @@ $(document).ready(function () {
     $('.block[data-target="' + data + '"]').show();
     let nomination_name = $('.categories__block.active__block span').text();
     $('.nomination__name').text(nomination_name);
-    
+
   });
   $('.modal .close_modal, .to__category').click(function () {
     $('.modal').slideUp(300);

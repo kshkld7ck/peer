@@ -1766,3 +1766,13 @@ background-size:contain;
 .modal-preview img:hover {
     box-shadow: 0 0 14px 1px rgba(0,0,0,0.3);
 } */
+
+
+.ie .nomination__block {
+    display: table !important
+}
+.ie .nomination__block p {
+    display:table-cell;
+    vertical-align: middle;
+    text-align:center;
+}
