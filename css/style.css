@@ -204,14 +204,14 @@ ul.nav__list li:last-child {
     width: 100%;
     height: 80px;
     z-index: 9;
-    bottom: -80px;
+    bottom: -79px;
     background-image: -webkit-gradient(linear, left top, right bottom, color-stop(49%, #000000), color-stop(50%, transparent));
     background-image: linear-gradient(to right bottom, #000000 49%, transparent 50%);
 }
 
 main {
     margin-top: -200px;
-    background:#c51b0b;
+    /* background:#c51b0b; */
     padding-top: 200px;
     /* background: url('../images/main_bg.png') no-repeat;
     background-size: cover;
@@ -221,9 +221,12 @@ main {
     color:#cd1e17
 }
 #carousel .item.first {
-    background:url('../images/main_bg2.png') no-repeat;
+    /* background:url('../images/main_bg2.png') no-repeat;
     background-size:cover;
-    background-position: 50% 50%;
+    background-position: 50% 50%; */
+}
+.second .carousel__item-logo {
+    opacity: 0;
 }
 
 .item {
@@ -232,17 +235,34 @@ main {
     display: -ms-flexbox;
     display: flex;
     padding-top: 100px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+
     padding-bottom: 100px;
 }
 .container .carousel__item-counter {
     display:none;
+}
+.first {
+    background-color:#c51b0b
+}
+.second {
+    background: url(../images/black_bg.png) no-repeat;
+    background-size: 90%;
+    background-position: 20% 100%;
+    background-color: #000;
+}
+.first .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    display: flex;
+    height: 100%;
+    background:url('../images/main_bg2.png') no-repeat;
+    background-size:cover;
+    background-position: 50% 50%;
 }
 .attention {
     margin-top:30px;
@@ -615,6 +635,21 @@ main {
    
 
 }
+.tabs__block:nth-child(3):after {
+    content: '';
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 275px;
+    height: 800px;
+    background-image: url(../images/vote.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    filter: grayscale(100%); 
+
+}
 
 .tabs__block:nth-child(2)::after {
     content: '';
@@ -641,13 +676,13 @@ main {
     color: #fff;
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
-    font-size: 62px;
+    font-size: 44px;
     position: relative;
     z-index: 12;
     min-width: 800px;
     margin-top: -450px;
     max-width: 800px;
-    margin-left: -262px;
+    margin-left: -150px;
 }
 
 .tabs__block {

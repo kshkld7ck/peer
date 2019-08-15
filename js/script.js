@@ -69,6 +69,7 @@ $(document).ready(function () {
     $('.block[data-target="' + data + '"]').show();
     let nomination_name = $('.categories__block.active__block span').text();
     $('.nomination__name').text(nomination_name);
+    
   });
   $('.modal .close_modal, .to__category').click(function () {
     $('.modal').slideUp(300);
@@ -246,9 +247,21 @@ $(document).ready(function () {
   // category generate
 
 
+  
+ function scrollTo(elem) {
+
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $(elem).offset()
+    }, 0);
+}
 
   $('.nomination__block').click(function () {
     let target = $(this).parent().attr('data-target');
+    console.log(document.body.clientWidth	)
+
+
+
+
     $('.category__opened.' + target).show();
     $(".nomination__block")
       .removeClass("active__choose")
@@ -256,6 +269,16 @@ $(document).ready(function () {
     $(this)
       .addClass("active__choose")
     // .removeClass("hidden");
+    let windowWidth = document.body.clientWidth;
+    if (windowWidth < 769) {
+      console.log( $(this).parent().parent().parent().find('.choose__wrapper').attr('class'))
+    
+      
+    $('.open').animate({ 
+      scrollTop: $(this).parent().parent().parent().find('.choose__wrapper').offset().top // прокручиваем страницу к требуемому элементу
+    }, 300 // скорость прокрутки
+    );
+    }
   })
 
   $('.categories__block, .tabs__nav h4').click(function () {
