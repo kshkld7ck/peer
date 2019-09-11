@@ -407,6 +407,11 @@ main #carousel .carousel__item-logo {
 .main__social-block a.social__viber {
     background: url('../images/viber.svg') no-repeat;
 }
+.main__social-block a.social__whatsapp {
+    background: url('../images/whatsapp.svg') no-repeat;
+    background-size: 100% 100%;
+}
+
 
 .main__social-block a.social__vk {
     background: url('../images/vk.svg') no-repeat;
